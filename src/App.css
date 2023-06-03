@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +33,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App{
+  border:2px solid red;
+  height: 20rem;
+  text-align: center;
+  background-color: #61dafb;
+  opacity: .78;
+}
+.heading{
+  font-weight: 800;
+}
+#select{
+  /* border: 2px solid red; */
+  width: 50%;
+  padding: 1rem 3rem;
+  border-radius: 10%;
+  border: none;
+margin: 2em 0em;
+/* background-color: .; */
+opacity: .8;
+}
+.opt{
+  border: 2px solid red;
+  padding: 3rem;
+}
+.outer{
+  margin: 10% 15%;
 }

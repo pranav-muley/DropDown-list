@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
+  // array created
+  const array =["Yes","Probably Not"];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='outer'> 
+       <div className="App">
+      <h1 className='heading'>Drop-down list using React...</h1>
+      <select id='select'>
+        <option className='opt' selected="selected" disabled>select</option>
+        {/* map from a array */}
+        {
+          array.map(name=>( 
+             <option className='opt'>{name}</option>
+          ))
+        }
+        
+      </select>
     </div>
+    </div>
+
   );
 }
 
