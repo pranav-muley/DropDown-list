@@ -10,7 +10,7 @@ function App() {
       <h1 className='heading'>Drop-down list using React...</h1>
       <select id='select'>
         <option className='opt' selected="selected" disabled>select</option>
-        {/* map from a array */}
+        {/* map from a array  to fetch each element from it*/}
         {
           array.map(name=>( 
              <option className='opt'>{name}</option>
